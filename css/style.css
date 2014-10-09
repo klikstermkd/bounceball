@@ -1,0 +1,227 @@
+html
+{
+   cursor: url('../images/cursors/cursor.cur'), url('../images/cursors/cursor.png'), auto;
+
+   -webkit-user-select: none;
+      -moz-user-select: none;
+}
+
+body 
+{
+   color: #08adff;
+   font-family: 'Frijole';
+   background: url('../images/bg.png') repeat scroll 0 0 transparent;
+}
+
+#game 
+{
+   width: 700px;
+   height: 280px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin-top: -180px;
+   margin-left: -350px;
+   border: 2px solid #08adff;
+   background: #ebebeb;
+   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+   background: -moz-linear-gradient(90deg, #ccc, #fff);
+   background: -ms-linear-gradient(90deg, #ccc, #fff);
+   background: -o-linear-gradient(90deg, #ccc, #fff);
+
+   -webkit-box-shadow: 0 0 10px #08adff;
+      -moz-box-shadow: 0 0 10px #08adff;
+           box-shadow: 0 0 10px #08adff;
+}
+
+#title
+{
+   position: relative;
+   top: -255px;
+   font-size: 40px;
+   text-align: center;
+}
+
+#onePlayer, #twoPlayers, #play, #back, #playAgain
+{
+   color: #fff;
+   text-align: center;
+   font-size: 20px;
+   padding: 6px 0;
+   border: 1px solid #093c75;
+   visibility: hidden;
+   background: #079ce6;
+   background: -webkit-gradient(linear, left top, left bottom, from(#08adff), to(#0459b7));
+   background: -moz-linear-gradient(90deg, #0459b7, #08adff); 
+   background: -ms-linear-gradient(90deg, #0459b7, #08adff); 
+   background: -o-linear-gradient(90deg, #0459b7, #08adff);
+
+   -webkit-box-shadow: 0 1px 0 #fff;
+      -moz-box-shadow: 0 1px 0 #fff;
+           box-shadow: 0 1px 0 #fff;
+
+   -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+           border-radius: 25px;
+}
+
+#onePlayer
+{
+   width: 160px; 
+   position: relative;
+   top: -190px;
+   left: 270px;
+}
+
+#twoPlayers
+{
+   width: 160px;
+   position: relative;
+   top: -160px;
+   left: 270px;
+}
+
+#play
+{
+   width: 110px;
+   position: relative;
+   top: -160px;
+   left: 570px;
+}
+
+#back
+{
+   width: 110px;
+   position: relative;
+   top: -195px;
+   left: 20px;
+}
+
+#playerInput
+{   
+   position: relative;
+   top: -310px;
+   left: 265px;
+}
+
+#firstPlayerInput
+{
+   position: relative;
+   top: -345px;
+   left: 185px;
+}
+
+#secondPlayerInput
+{
+   position: relative;
+   top: -285px;
+   left: 15px;
+}
+
+#playerInput, #firstPlayerInput, #secondPlayerInput
+{
+   width: 150px;
+   height: 20px;
+   font: 20px 'Frijole';
+   color: #08adff;
+   background: #fafafa;
+   visibility: hidden;
+
+   -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+           border-radius: 25px;
+}
+
+#enterName
+{
+   position: relative;
+   top: -380px;
+   font-size: 20px;
+   text-align: center;
+   visibility: hidden;
+}
+
+#enterFirstName
+{
+   position: relative;
+   top: -390px;
+   left: 165px;
+   font-size: 20px;
+   visibility: hidden;
+}
+
+#enterSecondName
+{
+   position: relative;
+   top: -350px;
+   left: 138px;
+   font-size: 20px;
+   visibility: hidden;
+}
+
+#playAgain
+{
+   position: relative;
+   top: -340px;
+   left: 255px;
+   width: 190px;
+}
+
+#loading
+{
+   position: absolute;
+   top: 285px;
+   left: 630px;
+   text-align: center;
+   visibility: hidden;
+}
+
+.handCursor
+{
+   cursor: url('../images/cursors/handcursor.cur'), url('../images/cursors/handcursor.png'), pointer;
+}
+
+#playerInput:focus, #firstPlayerInput:focus, #secondPlayerInput:focus
+{
+   background: #ffffff;
+}
+
+#onePlayer:hover, #twoPlayers:hover, #play:hover, #back:hover, #playAgain:hover 
+{
+   border-color: #093c75;
+   text-decoration: none;
+   background: #39bdff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#0bcdff), to(#067cd3));
+   background: -moz-linear-gradient(90deg, #067cd3, #0bcdff);
+   background: -ms-linear-gradient(90deg, #067cd3, #0bcdff);
+   background: -o-linear-gradient(90deg, #067cd3, #0bcdff);
+}
+
+input[type=text] 
+{
+   padding: 5px;
+   border: 1px solid #aaa;
+   background: rgba(255, 255, 255, 0.9);
+   background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff), color-stop(0.2, #fff));
+   background: -moz-linear-gradient(90deg, #fff, #eee); 
+   background: -ms-linear-gradient(90deg, #fff, #eee); 
+   background: -o-linear-gradient(90deg, #fff, #eee); 
+
+   -webkit-box-shadow: 0 0 3px #aaa;
+      -moz-box-shadow: 0 0 3px #aaa;
+           box-shadow: 0 0 3px #aaa;
+
+   -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+           border-radius: 3px;
+}
+
+input:focus 
+{
+   border-color: #093c75;
+   outline: none; 
+
+   -webkit-box-shadow: 0 0 3px #0459b7;
+      -moz-box-shadow: 0 0 3px #0459b7;
+           box-shadow: 0 0 3px #0459b7;
+}
